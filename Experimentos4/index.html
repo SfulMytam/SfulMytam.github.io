@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Antropológico De La Cultura Andina</title>
+    <link rel="stylesheet" href="estilo-sitios.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="WANKATURI.png" alt="Logo" />
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="lugaresturisticos.html">Lugares</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="imagen-texto">
+        <div class="tarjeta">
+            
+            <div class="contenido-tarjeta">
+            <h1>Museo Antropológico De La Cultura Andina</h1>
+            <p>El museo de la UNCP es una institución sin fines de lucro, que tiene
+                por finalidad la de conservar, estudiar y exponer el patrimonio cultural del 
+                hombre andino y amazónico ubicado en la región central del país.</p>
+            </div>
+            <div class="imagen-btn-d">
+                <div class="imagen-btn">
+                    <img src="M-CulturaAndina-02.jpg" alt="MedioDiaHuancayo">
+                    <section class="mapa">
+                        <button class="abrir01" onclick="abrirmodal()">Abrir Mapa</button>
+                        <div id="btn-mapa"class="btn-mapa">
+                            <div class="btn-mapa-contenido">
+                                <button class="cerrar01" onclick="cerrarmodal()">Cerrar</button>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31213.381276708224!2d-75.23439143481994!3d-12.066028783483064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e97d7e75b09dd%3A0x99ae66b5a97eb46!2sMuseo%20Antropol%C3%B3gico%20De%20La%20Cultura%20Andina!5e0!3m2!1ses-419!2spe!4v1728804569409!5m2!1ses-419!2spe"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+<div id="modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="imagen-modal">
+    <div id="caption"></div>
+</div>
+
+
+<div class="carrusel">
+    <div class="imagenes">
+        <div class="contenedor-imagen01">
+            <img src="imagen1.jpg" alt="Imagen 1" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 1</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen2.jpg" alt="Imagen 2" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 2</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen3.jpg" alt="Imagen 3" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 3</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen4.jpg" alt="Imagen 4" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 4</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen1.jpg" alt="Imagen 1" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 1</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen2.jpg" alt="Imagen 2" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 2</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen3.jpg" alt="Imagen 3" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 3</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen4.jpg" alt="Imagen 4" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 4</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen5.jpg" alt="Imagen 1" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 1</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen2.jpg" alt="Imagen 2" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 2</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen3.jpg" alt="Imagen 3" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 3</div>
+        </div>
+        <div class="contenedor-imagen01">
+            <img src="imagen4.jpg" alt="Imagen 4" class="imagenes-01">
+            <div class="descripcion">Descripción de la imagen 4</div>
+        </div>
+    </div>
+    <button class="boton-anterior" onclick="cambiarImagen(-1)">Anterior</button>
+    <button class="boton-siguiente" onclick="cambiarImagen(1)">Siguiente</button>
+</div> 
+    <div class="indicadores">
+        <span onclick="seleccionarImagen(0)" class="punto"></span>
+        <span onclick="seleccionarImagen(1)" class="punto"></span>
+        <span onclick="seleccionarImagen(2)" class="punto"></span>
+        <span onclick="seleccionarImagen(3)" class="punto"></span>
+        <span onclick="seleccionarImagen(4)" class="punto"></span>
+        <span onclick="seleccionarImagen(5)" class="punto"></span>
+        <span onclick="seleccionarImagen(6)" class="punto"></span>
+        <span onclick="seleccionarImagen(7)" class="punto"></span>
+        <span onclick="seleccionarImagen(8)" class="punto"></span>
+        <span onclick="seleccionarImagen(9)" class="punto"></span>
+        <span onclick="seleccionarImagen(10)" class="punto"></span>
+        <span onclick="seleccionarImagen(11)" class="punto"></span>
+    </div>
+    <div id="modal" class="modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-img" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    
+    
+    <script src="script.js"></script> 
+</body>
+</html>
